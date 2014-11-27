@@ -34,6 +34,8 @@ development:
 test:
   <<: *default
   database: kadambam_test
+  username: postgres
+  password: root
   # username: <%= ENV['SNAP_DB_PG_USER'] %>
   # password: <%= ENV['SNAP_DB_PG_PASSWORD'] %>
 
