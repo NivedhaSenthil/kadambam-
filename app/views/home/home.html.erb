@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <%= favicon_link_tag '/favicon.ico' %>
-  <title>Theme Template for Bootstrap</title>
+  <title>Home</title>
 </head>
 <body role="document">
 
@@ -22,21 +22,22 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-        <%=image_tag("logo.jpg", alt: "Kadambam")%>
+        <%= image_tag("logo.jpg", alt: "Kadambam") %>
       </a>
 
-      <!--<a class="navbar-brand" href="#">Kadambam</a>-->
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><%= link_to 'Login', new_user_session_path %></li>
       </ul>
-    </div><!--/.nav-collapse -->
+    </div>
+    <!--/.nav-collapse -->
   </div>
 </nav>
-
+</br>
 <div class="navbar navbar-default navbar-fixed-bottom">
   <div class="container">
     <p class="navbar-text pull-left">© 2014 - Site Built By Nivedha
@@ -47,4 +48,5 @@
   </div>
 </div>
 </body>
+
 </html>
